@@ -29,6 +29,7 @@
                             <goal>removeStubs</goal>
                             <goal>removeTestStubs</goal>
                         </goals>
+<!--
                         <configuration>
                             <sources>
                                 <fileset>
@@ -39,6 +40,7 @@
                                 </fileset>
                             </sources>
                         </configuration>
+                        -->
                     </execution>
                 </executions>
             </plugin>
@@ -54,6 +56,12 @@
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>
             <version>1.0-groovy-2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib-nodep</artifactId>
+            <version>3.1</version>
         </dependency>
     </dependencies>
 
